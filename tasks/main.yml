@@ -19,18 +19,6 @@
   selinux:
     state: disabled
 
-# Not sure why this is part of this role
-# should be moved to a more specific role
-# - name: create download dirs
-#   file:
-#     path: "{{ item }}"
-#     state: directory
-#   with_items:
-#     - "{{ provision_files_path }}/downloaded"
-#     - "{{ provision_files_path }}/misc"
-#     - "/var/tmp/ansible/misc"
-
-
 - name: packages are installed
   yum:
     name: "{{ packages }}"
