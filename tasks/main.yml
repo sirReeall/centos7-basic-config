@@ -25,6 +25,7 @@
     state: present
   vars:
     packages:
+      - telnet
       - ntp
       - iftop
       - unzip
