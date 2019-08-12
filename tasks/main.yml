@@ -25,6 +25,7 @@
     state: present
   vars:
     packages:
+      - lsof
       - git
       - telnet
       - ntp
